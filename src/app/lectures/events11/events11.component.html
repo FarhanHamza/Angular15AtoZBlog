@@ -1,0 +1,34 @@
+
+----------------------------------------- <br>
+    <h2 class="headingTen">Function call on Events </h2>
+----------------------------------------- <br>
+
+<button (click)="getData('Farhan')">Click me</button>
+
+
+<p>========</p>
+<p>Events in angular</p>
+<p>========</p>
+<h3>1: click</h3>
+<button (click)='getData("farhan")'> display data</button>
+
+<h2>2: keyup</h2><p> on key Realised</p>
+<input (keyup)="getData(box.value)" #box placeholder="event keyup" />
+
+<h2>3: keydown</h2>  <p>on key pressed == null</p>
+<input (keydown)="getData(box2.value)" #box2 placeholder="event keydown" />
+
+<h2>3: Blur</h2> <p>focus out from field</p>
+<input (blur)="getData(box3.value)" #box3 placeholder="event blur" />
+
+<h2>4: Input</h2> <p>if input value is entered == value</p>
+<input (input)="getData(box4.value)" #box4 type="text" placeholder="event input">
+
+<h2>5: Change</h2> <p>Input value is change == value</p>
+<input (change)="getData(box5.value)" #box5 type="text" placeholder="event change">
+
+<h1>Html tags</h1>
+<h3 (mouseover)="getData(box4.value)" >1: mouseOver</h3>
+<h3 (mouseout)="getData(box4.value)" >2: mouseOut</h3>
+<h3 (mouseleave)="getData('mouseLeave')" >2: mouseLeave</h3>
+

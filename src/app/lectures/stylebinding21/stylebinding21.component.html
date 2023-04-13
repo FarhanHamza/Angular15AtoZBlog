@@ -1,0 +1,83 @@
+<h2 class="twentyH"> Style Binding <kbd>21</kbd> </h2>
+
+<p style="color:cadetblue">This is paragraph</p>
+
+<span>Initial Style Binding</span>
+<p [style.background-color]="'cadetblue'">This is initial Style Binding</p>
+
+
+<span>Var dash Style Binding</span>
+<p [style.background-color]="variableColor">This is Variable Style Binding</p>
+
+<span> Var camelCase Style Binding</span>
+<p [style.backgroundColor]="variableColor">This is camelCase Style Binding</p>
+
+<span>Multiple Style Binding</span> <br>
+<nav [style]="multipleStyles">
+    <a href="#" [style.text-decoration]="linkStyle">Login</a> <br>
+    <a href="#" [style.text-decoration]="linkStyle">Sign up</a>
+</nav>
+
+<button (click)="updateColor()">onlclick Style Binding 2</button> <br>
+<h3 [style.background-color]="changeColor"> Lorem ipsum dolor sit amet.
+</h3>
+
+<hr>
+<h3 class="twentyH"> CLass Binding 21</h3>
+<h4>Conditional Class</h4> [Bool | undefined | Null]
+<pre class="bg-info">  [class.text-primary]="true"</pre>
+<p [class.text-primary]="true">This is Class Binding </p>
+
+<h4>Multi Class Binding</h4> string
+<pre class="bg-info">  [class]="classExpression" </pre>
+<p [class]="myClassExp">This is simple string Class Binding </p>
+
+<h4>Multi Class Binding</h4> Object [string]
+<pre class="bg-info">  [class]="classExpression" </pre>
+<p [class]="ObjString">This is Obj Class Binding </p>
+
+<h4>Multi Class Binding</h4> Array [string]
+<pre class="bg-info">  [class]="classExpression" </pre>
+<p [class]="arrayString">This is Array str Class Binding </p>
+
+
+<!-- Creating Navbar using Style Binding -->
+<h3>Creating Navbar using Class Binding</h3>
+
+<nav [style.background-color]="'cadetblue'" [style.padding.px]="10">
+    <img src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" alt="classBinding" [style.width.px]=120
+        [style.padding.px]="10">
+    <ul [style.float]="'right'" [style.padding.px]="10" [style.list-style-type]="'none'">
+        <li [style.display]="'inline-block'" [style.color]="'white'"><a [style.text-decoration]="'none'"
+                [style.padding.px]="10" href="#"></a>Home </li>
+        <li [style.display]="'inline-block'" [style.color]="'white'"><a [style.text-decoration]="'none'"
+                href="#"></a>About </li>
+        <li [style.display]="'inline-block'" [style.color]="'white'"><a [style.text-decoration]="'none'"
+                href="#"></a>Contact </li>
+        <li [style.display]="'inline-block'" [style.color]="'white'"><a [style.text-decoration]="'none'"
+                href="#"></a>Menu </li>
+    </ul>
+</nav>
+
+
+<!-- <button [className]="disabled? 'btn btn-primary': ''"> [Class]= {disabled? 'diabled': ''}</button> -->
+<kbd [className]="true ? 'bg-warning': ''"> [ClassName]</kbd>
+<kbd [className]="'bg-warning'"> [ClassName]</kbd>
+
+<h3>[ngClass] on Obj</h3>
+<h4 [ngClass]="{'bg-warning': false, 'bg-info': true}"> [ngClass]</h4>
+<h3>[ngClass] on string Array</h3>
+<h4 [ngClass]="['bg-warning','text-danger']"> [ngClass]</h4>
+
+<h3>[ngClass] on variable</h3>
+<h4 [ngClass]="true? 'bg-info': 'text-danger'"> [ngClass]</h4>
+
+<!-- <h3 nz-typography *ngIf="headingData.heading === 3" [class]="headingData.fontstyle"
+[style.color]="headingData.color">{{headingData.text}}</h3> -->
+
+<p [class]="codeStatus">Code Status</p>
+
+<div [class]="ApiResponse">Api Response </div>
+
+
+

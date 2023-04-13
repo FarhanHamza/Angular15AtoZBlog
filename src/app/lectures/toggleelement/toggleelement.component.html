@@ -1,0 +1,9 @@
+<h2 class="twentyH">Toggle Element</h2>
+
+<button class="btn btn-primary" (click)="toggle()">Toggle</button>
+<h4 *ngIf="display">Toggle Element Show Or Hide</h4>
+
+
+<!-- [class.btn-sm]="true" [class.btn]="true" -->
+<input [type]="password" placeholder="Enter Password" class="form-control">
+<button [class]="'btn btn-sm'"  [ngClass]="passwordClass" (click)="togglePassword()">Toggle Password</button>

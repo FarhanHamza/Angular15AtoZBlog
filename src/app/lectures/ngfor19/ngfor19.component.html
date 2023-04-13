@@ -1,0 +1,24 @@
+<h1 class="heading"> ng For Loop <kbd class="text-bg-primary">19</kbd> </h1>
+
+<h3 *ngFor="let item of user">{{item}}</h3>
+
+<!-- <h4 *ngFor="let user of userDetail">{{user.name}} -- {{user.email}} -- {{user.phone}}</h4>
+ -->
+
+ <table class="table table-bordered table-hover table-info">
+    <thead>
+        <tr> 
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of userDetail">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+        </tr>
+    </tbody>
+ </table>

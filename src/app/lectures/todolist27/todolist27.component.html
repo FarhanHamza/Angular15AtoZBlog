@@ -1,0 +1,43 @@
+<h2 class="twentyH">{{title}} <kbd>27</kbd></h2>
+<label for="todoInput">Enter Name of Todo</label> <br>
+<input type="text" #todoInput name="todoInput" id="todoInput" placeholder="Enter todo...">
+<br>
+<button class="btn btn-sm btn-success" (click)="addToDo(todoInput.value)">Add to do</button>
+<br>
+
+
+<div class="border p-3 m-3">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Work</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+            <h1 *ngIf="myTodo.length>= 1; then ifBlock else elseBlock"> </h1>
+
+        </tbody>
+    </table>
+
+</div>
+
+<ng-template #ifBlock>
+    <ng-container *ngFor="let item of myTodo; let i = index">
+        <tr>
+            <th scope="row">{{i+1}} </th>
+            <td> {{item.name}} </td>
+            <td><button class="btn btn-sm btn-danger" (click)="removeTodo(item.id)">Remove</button></td>
+        </tr>
+    </ng-container>
+</ng-template>
+
+
+
+<ng-template #elseBlock>
+    <p class="text-center lead mt-2">Currently there is no todo.</p>
+</ng-template>

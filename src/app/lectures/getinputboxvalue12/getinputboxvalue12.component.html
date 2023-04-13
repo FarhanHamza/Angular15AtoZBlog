@@ -1,0 +1,17 @@
+<div>
+    <h2 class="headingTen"> Chapter 12 | Get Input Box Value</h2>
+    <kbd>ALternate of NgModal</kbd> <br>
+    <label for="username"> Enter your name:</label> <br>
+    <input (change)="getInputValue(box.value)" #box type="text" placeholder="Enter your name" name="username">
+    <br> <br>
+    <label for="email"> Enter your name:</label> <br>
+    <input #email type="email" placeholder="Enter your name" for="email" > <button
+        (click)="getInputValue(email.value)">Click</button>
+    <br> <br>
+    <div class="result">
+        <h3>Result:</h3>
+        {{displayVal}}
+    </div>
+</div>
+<label for="dob">Enter Dob</label>
+<input type="text" id="dob" name="dob">

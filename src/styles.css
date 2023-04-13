@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+.heading{
+    color: green;
+    padding: 20px;
+    border: 2px solid gray;
+}
+.headingTen{
+    color: yellowgreen;
+    padding: 20px;
+    border: 2px solid gray;
+}
+
+.twentyH{
+    color: red;
+    padding: 20px;
+    border: 2px solid gray;
+}
+
+
+body{
+    margin: 0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

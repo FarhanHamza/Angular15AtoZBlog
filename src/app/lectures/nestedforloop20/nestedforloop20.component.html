@@ -1,0 +1,94 @@
+<h1 class="heading">Nested For Loop <kbd class="bg-primary">20</kbd></h1>
+
+<ul *ngFor="let dev of developers">
+    <li>{{dev.name}}</li>
+    <li>{{dev.email}}</li>
+</ul>
+
+<!-- Example using ng-container -->
+
+<h3 class="heading"> 01 Ng-Container</h3>
+<ng-container *ngFor="let dev of developers">
+    <li>{{dev.name}}</li>
+    <li>{{dev.email}}</li>
+</ng-container>
+
+
+
+
+<!-- Example using ng-template -->
+<div class="twentyH"> 02using ng-Temlplate
+    <div *ngFor="let dev of developers">
+        <ng-template #itemTemplate>
+            <li>{{dev.name}}</li>
+            <li>{{dev.email}}</li>
+        </ng-template>
+        <p *ngIf="true; then itemTemplate "></p>
+    </div>
+</div>
+
+
+------------- <br>
+<ng-template #key>
+    <kbd>CTRL + C</kbd>
+</ng-template>
+
+<h1 *ngIf="showDetails; then key"> Content Show on 'showDetail' </h1>
+<h1 *ngIf="isVisible; then key"> Content Show on 'showDetail' </h1>
+
+
+<ng-template #qwe>
+    <H1>qwe</H1>
+</ng-template>
+
+<h1 *ngIf="showDetails==true; then ifBlock else elseBlock">
+
+</h1>
+
+<ng-template #ifBlock>
+    <h2>If condition</h2>
+</ng-template>
+<ng-template #elseBlock>
+    <h2>Else condition</h2>
+</ng-template>
+
+<!-- 
+<ul *ngFor="let dev of developers">         
+    <li>{{dev.name}}</li>
+    <ol *ngFor="let sk of dev.skills" style="list-style-type: lower-roman;">
+        <li>{{sk.frontened}}</li>
+        <li>{{sk.backened}}</li>
+    </ol>
+
+</ul> -->   
+
+<hr>
+
+<div class="table-responsive">
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Frontened - Skills</th>
+                <th scope="col">Backened - Skills</th>
+                <th scope="col">Graphics - Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" *ngFor="let dev of developers; let i =index">
+                <td scope="row">{{i}}</td>
+                <td scope="row">{{dev.name}}</td>
+                <td scope="row" *ngFor="let sk of dev.skills">
+                    {{sk.frontened}}
+                    {{sk.backened}}
+                    {{sk.GFX}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<h2 *ngIf="true; then key"></h2>

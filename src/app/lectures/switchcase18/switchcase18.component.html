@@ -1,0 +1,19 @@
+<h1 class="heading">Switch Case <kbd>18</kbd></h1>
+
+<div class="border border-1 rounded-top p-4 m-2">
+  <div class="">
+    <div class="btn-group text-center mx-auto" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger" (click)="changeColor('red')">RED</button>
+        <button type="button" class="btn btn-success" (click)="changeColor('green')">Green</button>
+        <button type="button" class="btn btn-primary" (click)="changeColor('blue')">BLUE</button>
+    </div>
+  </div>
+
+    <div [ngSwitch]="color">
+        <h5 *ngSwitchCase="'red'" style="color: red;"> This is RED Case</h5>
+        <h5 *ngSwitchCase="'green'" style="color: green;"> This is Green Case</h5>
+        <h5 *ngSwitchCase="'blue'" style="color: blue;"> This is BLUE Case</h5>
+        <h5 *ngSwitchCase="'yellow'" style="color: yellowgreen;"> This is Yellow Case</h5>
+        <h5 *ngSwitchDefault> Unknown Color</h5>
+    </div>
+</div>

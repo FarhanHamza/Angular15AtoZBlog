@@ -1,0 +1,30 @@
+nav img {
+    width: 120px;
+    padding: 10px;
+}
+
+nav {
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    padding: 10px
+}
+
+ul li {
+    display: inline-block;
+
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+li a:hover {
+    color: rgb(221, 212, 212);
+}
