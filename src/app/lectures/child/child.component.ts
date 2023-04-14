@@ -6,8 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-  @Input() showChildPhone
-  @Input() showChildEmail
+  @Input() showChildPhone //= 'wu'
+  @Input() showChildEmail //= "w"
+  @Input() recieveNumber
   title = "Pass data from 'Parent to Child'"
   
 }

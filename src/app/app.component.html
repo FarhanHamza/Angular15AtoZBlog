@@ -152,6 +152,12 @@
 
   
 <hr>
+<!-- Parent to (onClick) -->
+<button class="bnt.btn-primary" (click)="updateChildData()">Update ChildData</button>
+  <app-child [recieveNumber]="sendRandomNum"></app-child>
+
+  
+<hr>
 <!-- ResuableComponent -->
 <h2 class="twentyH">ResuableComponent <kbd>29</kbd></h2>
 <div class="border p-5">
@@ -159,3 +165,5 @@
     <app-resuableCompDetail29 [item]="item"></app-resuableCompDetail29>
   </ul>
 </div>
+
+<app-interiordesign></app-interiordesign>

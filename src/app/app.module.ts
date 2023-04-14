@@ -28,9 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Matui26Component } from './lectures/matui26/matui26.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 import { Todolist27Component } from './lectures/todolist27/todolist27.component';
 import { ChildComponent } from './lectures/child/child.component';
+import { InteriordesignComponent } from './building/interiordesign/interiordesign.component';
 
 
 
@@ -55,8 +56,8 @@ import { ChildComponent } from './lectures/child/child.component';
     Matui26Component,
     Todolist27Component,
     ChildComponent,
-    ResuableCompDetail29Component
-    ,
+    ResuableCompDetail29Component,
+    // InteriordesignComponent,
 
 
   ],

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RoomsComponent } from './rooms/rooms.component';
 import { GaragComponent } from './garag/garag.component';
 import { OffieComponent } from './offie/offie.component';
+import { InteriordesignComponent } from './interiordesign/interiordesign.component';
 
 
 
@@ -10,13 +11,15 @@ import { OffieComponent } from './offie/offie.component';
   declarations: [
     RoomsComponent,
     GaragComponent,
-    OffieComponent
+    OffieComponent,
+    InteriordesignComponent
   ],
   imports: [
     CommonModule
   ],
   exports:[
-    OffieComponent
+    OffieComponent,
+    InteriordesignComponent
   ]
 })
 export class BuildingModule { }
