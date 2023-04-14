@@ -1,3 +1,4 @@
+import { ResuableCompDetail29Component } from './lectures/userdetails29/ResuableCompDetail29.component';
 import { ElseifComponent } from './lectures/elseif/elseif.component';
 import { NgModule } from '@angular/core';
 
@@ -29,7 +30,7 @@ import { Matui26Component } from './lectures/matui26/matui26.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatBadgeModule} from '@angular/material/badge';
 import { Todolist27Component } from './lectures/todolist27/todolist27.component';
-import { ChildComponent } from './lectures/child/child.component'
+import { ChildComponent } from './lectures/child/child.component';
 
 
 
@@ -54,6 +55,8 @@ import { ChildComponent } from './lectures/child/child.component'
     Matui26Component,
     Todolist27Component,
     ChildComponent,
+    ResuableCompDetail29Component
+    ,
 
 
   ],

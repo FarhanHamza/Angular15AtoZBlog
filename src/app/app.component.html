@@ -148,4 +148,14 @@
 
 <hr>
 <!-- Parent to Child -->
-<app-child [showChildPhone]='parentPhNumber' [showChildEmail]="parentEmail"></app-child>
+  <app-child [showChildPhone]='parentPhNumber' [showChildEmail]="parentEmail"></app-child>
+
+  
+<hr>
+<!-- ResuableComponent -->
+<h2 class="twentyH">ResuableComponent <kbd>29</kbd></h2>
+<div class="border p-5">
+  <ul [style.list-style-type]="'circle'" *ngFor="let item of userDetail">
+    <app-resuableCompDetail29 [item]="item"></app-resuableCompDetail29>
+  </ul>
+</div>
