@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./ResuableCompDetail29.component.css']
 })
 export class ResuableCompDetail29Component {
-  @Input() item: {name:string, email: string}= {name:"", email: ""}
+  @Input() item: {name:string, email: string}= {name:"farhan", email: "hamza"}
 }

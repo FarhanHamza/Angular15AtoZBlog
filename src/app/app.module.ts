@@ -32,7 +32,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { Todolist27Component } from './lectures/todolist27/todolist27.component';
 import { ChildComponent } from './lectures/child/child.component';
 import { InteriordesignComponent } from './building/interiordesign/interiordesign.component';
-
+import { CheckpassdataComponent } from './lectures/checkpassdata/checkpassdata.component';
 
 
 @NgModule({
@@ -57,7 +57,8 @@ import { InteriordesignComponent } from './building/interiordesign/interiordesig
     Todolist27Component,
     ChildComponent,
     ResuableCompDetail29Component,
-    // InteriordesignComponent,
+    CheckpassdataComponent,
+        // InteriordesignComponent,
 
 
   ],
