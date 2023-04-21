@@ -148,26 +148,31 @@
 
 <hr>
 <!-- Parent to Child 28 -->
-  <app-child [showChildPhone]='parentPhNumber' [showChildEmail]="parentEmail"></app-child>
+<app-child [showChildPhone]='parentPhNumber' [showChildEmail]="parentEmail"></app-child>
 <hr>
 
 <!-- CheckPassData [] -->
- <div class="border p-3">
-<app-checkpassdata [showData]="sendRandomNum"></app-checkpassdata>
-<button class="btn btn-primary" (click)="updateChildData()">Update Child Data</button>
- </div>
+<div class="border p-3">
+  <app-checkpassdata [showData]="sendRandomNum"></app-checkpassdata>
+  <button class="btn btn-primary" (click)="updateChildData()">Update Child Data</button>
+</div>
 
 <!-- Parent to (onClick)  Same -->
-  <!-- <button class="bnt.btn-primary" (click)="updateChildData()">Update ChildData</button>
+<!-- <button class="bnt.btn-primary" (click)="updateChildData()">Update ChildData</button>
   <app-child [recieveNumber]="sendRandomNum"></app-child> -->
-  
+
 <hr>
 <!-- ResuableComponent -->
 <h2 class="twentyH">ResuableComponent <kbd>29</kbd></h2>
 <div class="border p-5">
   <ul [style.list-style-type]="'circle'" *ngFor="let item of userDetail">
-   <app-resuableCompDetail29 [item]="item"></app-resuableCompDetail29>
+    <app-resuableCompDetail29 [item]="item"></app-resuableCompDetail29>
   </ul>
 </div>
 
 <app-interiordesign></app-interiordesign>
+<hr>
+<!-- Send Data Child to Parent 30 -->
+{{showData}}
+<app-childtoparent (updateDataEvent)="updateData($event)"></app-childtoparent>
+

@@ -33,6 +33,7 @@ import { Todolist27Component } from './lectures/todolist27/todolist27.component'
 import { ChildComponent } from './lectures/child/child.component';
 import { InteriordesignComponent } from './building/interiordesign/interiordesign.component';
 import { CheckpassdataComponent } from './lectures/checkpassdata/checkpassdata.component';
+import { ChildtoparentComponent } from './lectures/childtoparent/childtoparent.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { CheckpassdataComponent } from './lectures/checkpassdata/checkpassdata.c
     ChildComponent,
     ResuableCompDetail29Component,
     CheckpassdataComponent,
+    ChildtoparentComponent,
         // InteriordesignComponent,
 
 

@@ -8,7 +8,7 @@ var a = 10;
   // h2 { font-weight: normal; font-size: 20px; color:red;  }
 })
 export class AppComponent implements OnInit {
-  
+
   ngOnInit(): void {
     // console.log(a)
   }
@@ -39,14 +39,23 @@ export class AppComponent implements OnInit {
   ]
   parentPhNumber = '030452323939'
   parentEmail: any = 'Farhan.gmdc@gmail.com'
-  sendRandomNum: any  = 2828
+  sendRandomNum: any = 2828
 
 
   updateChildData() {
     debugger
-    this.sendRandomNum = Math.floor(Math.random()*7);
+    this.sendRandomNum = Math.floor(Math.random() * 7);
     console.log(this.sendRandomNum);
-    
+  }
+
+
+  // Child to Parent
+  showData = '...';
+  updateData(item: string) {
+    debugger
+    console.log(item);
+    this.showData = item
+
   }
 
 }

@@ -1,0 +1,8 @@
+<h2 class="twentyH">Send Data Child to Parent</h2>
+<div class="border p-4">
+    <div class="form-group">
+        <label class="form-label">user email</label>
+        <input class="form-control" type="text" #box placeholder="Enter email...." />
+        <button class="btn btn-primary" (click)="updateDataEvent.emit(box.value)">Submit Data</button>
+    </div>
+</div>
