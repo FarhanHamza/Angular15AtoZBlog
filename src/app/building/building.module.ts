@@ -4,6 +4,10 @@ import { RoomsComponent } from './rooms/rooms.component';
 import { GaragComponent } from './garag/garag.component';
 import { OffieComponent } from './offie/offie.component';
 import { InteriordesignComponent } from './interiordesign/interiordesign.component';
+import { BuildingComponent } from './building.component';
+import { RouterModule } from '@angular/router';
+import { BuildingRoutingModule } from './building-routing.module';
+import { BuilderrorComponentComponent } from './builderror-component/builderror-component.component';
 
 
 
@@ -12,10 +16,14 @@ import { InteriordesignComponent } from './interiordesign/interiordesign.compone
     RoomsComponent,
     GaragComponent,
     OffieComponent,
-    InteriordesignComponent
+    InteriordesignComponent,
+    BuildingComponent,
+    BuilderrorComponentComponent
   ],
   imports: [
-    CommonModule
+    // CommonModule,
+    // RouterModule,
+    BuildingRoutingModule
   ],
   exports:[
     OffieComponent,
