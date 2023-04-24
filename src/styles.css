@@ -16,6 +16,15 @@
     border: 2px solid gray;
 }
 
+.thirty{
+    color: rgb(205, 136, 7);
+    padding: 20px;
+    border: 2px solid gray;
+}
+.thirty kbd{
+        background-color: burlywood;
+}
+
 
 body{
     margin: 0;

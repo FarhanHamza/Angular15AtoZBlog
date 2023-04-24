@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 var a = 10;
 @Component({
   selector: 'app-root',
@@ -58,9 +59,23 @@ export class AppComponent implements OnInit {
 
   }
 
+  // Ai.
   handleDataEvent(data: string){
     console.log(data);
     this.showData = data;
   }
+
+  // Two way data Binding
+  userEmail: string= 'ngModel'   //:Form
+  // 2nd Method: Two way data Binding
+  userAddress: string = '777'
+
+  changeAddress(input: string){
+    // debugger
+    this.userAddress = input; 
+  }
+
+
+
 
 }

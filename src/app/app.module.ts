@@ -1,4 +1,4 @@
-import { ResuableCompDetail29Component } from './lectures/userdetails29/ResuableCompDetail29.component';
+import { ResuableCompDetail29Component } from './lectures/ReuableComponent29/ResuableCompDetail29.component';
 import { ElseifComponent } from './lectures/elseif/elseif.component';
 import { NgModule } from '@angular/core';
 
@@ -34,7 +34,8 @@ import { ChildtoparentComponent } from './lectures/childtoparent/childtoparent.c
 import { RouterModule } from '@angular/router';
 import { SkillsModule } from './skills/skills.module';
 import { ChildtoparentAIComponent } from './lectures/childtoparent-ai/childtoparent-ai.component';
-
+import { Twowaybind31Component } from './lectures/twowaybind31/twowaybind31.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -59,10 +60,12 @@ import { ChildtoparentAIComponent } from './lectures/childtoparent-ai/childtopar
     CheckpassdataComponent,
     ChildtoparentComponent,
     ChildtoparentAIComponent,
+    Twowaybind31Component,
 
 
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     // BuildingRoutingModule,
     BrowserAnimationsModule,
