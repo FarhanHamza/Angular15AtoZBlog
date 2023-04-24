@@ -27,10 +27,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Pass Data Child to Parent:
-*Steps*
-  #1 in child-component define a  `@Output()` `dataEvent`  proprty of type `eventEmitter()`;
-  #2 use the `emit()` method of the EventEmitter to emit the data to the parent component.
-  #3 in parent component, include the child-component in the template. and bind to its `dataEvent` property.
-  #4 in parent component, define the `handleDataEvent()` method to receive the data emitted from the child-component. 
- 24-04-2023
+ > **Steps**
+- #1 in child-component define a  `@Output()` `dataEvent`  proprty of type `eventEmitter()`;
+- #2 use the `emit()` method of the EventEmitter to emit the data to the parent component.
+- #3 in parent component, include the child-component in the template. and bind to its `dataEvent` property.
+- #4 in parent component, define the `handleDataEvent()` method to receive the data emitted from the child-component. 
+24-04-2023
  
