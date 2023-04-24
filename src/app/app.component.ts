@@ -58,4 +58,9 @@ export class AppComponent implements OnInit {
 
   }
 
+  handleDataEvent(data: string){
+    console.log(data);
+    this.showData = data;
+  }
+
 }

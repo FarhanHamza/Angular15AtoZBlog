@@ -33,6 +33,7 @@ import { CheckpassdataComponent } from './lectures/checkpassdata/checkpassdata.c
 import { ChildtoparentComponent } from './lectures/childtoparent/childtoparent.component';
 import { RouterModule } from '@angular/router';
 import { SkillsModule } from './skills/skills.module';
+import { ChildtoparentAIComponent } from './lectures/childtoparent-ai/childtoparent-ai.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { SkillsModule } from './skills/skills.module';
     ResuableCompDetail29Component,
     CheckpassdataComponent,
     ChildtoparentComponent,
+    ChildtoparentAIComponent,
 
 
   ],
