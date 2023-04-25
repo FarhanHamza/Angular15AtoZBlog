@@ -191,48 +191,50 @@
 <!-- 31 Two way Data binding -->
 <div class="bg-dark p-2 rounded">
   <h3 class="thirty">
-     Two way Data binding <kbd>31</kbd>
+    Two way Data binding <kbd>31</kbd>
   </h3>
-<div class="border p-3 bg-info">
-  <p>using [(ngModel)]</p>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 border">
-        <div class="form">
-          <div class="mb-3">
-            <div class="form-label">user email | [(..)]</div>
-            <input type="text" class="form-control" [(ngModel)]="userEmail" />
+  <div class="border p-3 bg-info">
+    <p>using [(ngModel)]</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 border">
+          <div class="form">
+            <div class="mb-3">
+              <div class="form-label">user email | [(..)]</div>
+              <input type="text" class="form-control" [(ngModel)]="userEmail" />
 
+            </div>
           </div>
         </div>
+        <div class="col-md-6 border">
+          <div class="form-label">Current values</div>
+          <div class="display-6">{{userEmail}}</div>
+        </div>
       </div>
-      <div class="col-md-6 border">
-        <div class="form-label">Current values</div>
-        <div class="display-6">{{userEmail}}</div>
+    </div>
+  </div>
+
+  <!-- 31 2nd Metjod: Two way Data binding -->
+  <div class="border p-3 bg-warning">
+    <p>using (change) event</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 border">
+          <div class="form">
+            <div class="mb-3">
+              <div class="form-label">user Address | functin()</div>
+              <input type="text" class="form-control" (keyup)="changeAddress(input.value)" #input />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 border">
+          <div class="form-label">Current Address</div>
+          <div class="display-6">{{userAddress}}</div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- 31 2nd Metjod: Two way Data binding -->
-<div class="border p-3 bg-warning">
-  <p>using (change) event</p>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 border">
-        <div class="form">
-          <div class="mb-3">
-            <div class="form-label">user Address | functin()</div>
-            <input type="text" class="form-control" (keyup)="changeAddress(input.value)"  #input/>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 border">
-        <div class="form-label">Current Address</div>
-        <div class="display-6">{{userAddress}}</div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<!-- 32 Template Refrence Variable -->
+<app-temprefvar32> </app-temprefvar32>

@@ -36,6 +36,7 @@ import { SkillsModule } from './skills/skills.module';
 import { ChildtoparentAIComponent } from './lectures/childtoparent-ai/childtoparent-ai.component';
 import { Twowaybind31Component } from './lectures/twowaybind31/twowaybind31.component';
 import {FormsModule} from "@angular/forms";
+import { Temprefvar32Component } from './lectures/temprefvar32/temprefvar32.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import {FormsModule} from "@angular/forms";
     ChildtoparentComponent,
     ChildtoparentAIComponent,
     Twowaybind31Component,
+    Temprefvar32Component,
 
 
   ],
