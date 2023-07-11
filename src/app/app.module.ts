@@ -41,6 +41,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { ProductsModule } from './pages/products/products.module';
 import { IsActivePipe } from './shared/pipes/is-active.pipe';
 import { ErrorComponent } from './shared/components/error/error.component';
+import { Basictypescript33Component } from './lectures/basictypescript33/basictypescript33.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { ErrorComponent } from './shared/components/error/error.component';
     Twowaybind31Component,
     Temprefvar32Component,
     BreadcrumbComponent,
-    // ErrorComponent,
+    // ErrorComponent,    Basictypescript33Component,
+
 
   ],
   imports: [
