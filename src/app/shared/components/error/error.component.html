@@ -1,0 +1,7 @@
+<!-- <p>error works!</p> -->
+<!-- <p class="text-success">{{form_control.errors| json}}</p> -->
+<div *ngIf="isSubmitted && form_control.errors">
+    <span *ngIf="form_control.errors['required']">field is required</span>
+    <span *ngIf="form_control.errors['email']">invalid email</span>
+    <span *ngIf="form_control.errors['pattern']">not a valid field</span>
+</div>

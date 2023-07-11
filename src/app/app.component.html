@@ -5,8 +5,9 @@
 </h3> -->
 
 
-<hr>
 <h3>{{title}}</h3>
+
+<!-- <app-breadcrumb></app-breadcrumb> -->
 
 <hr>
 <!-- interpolation 5-->
@@ -15,7 +16,7 @@
 <h4>{{2+2}}</h4>
 <h5>{{title === "blog"}}</h5>
 <h5>{{number ==8}}</h5>
-<!-- {{number ++}} 
+<!-- {{number ++}}
 <h5>Cannot do in interpolation</h5>
 <h2 class={{title}}> This my Title</h2> -->
 
@@ -178,11 +179,11 @@
 
 <router-outlet></router-outlet>
 
-<!-- 
+<!--
   #1 in child-component define @Output proprty of type eventEmitter();
   #2 use the emit() method of the EventEmitter to emit the data to the parent component.
   #3 in parent component, include the child-component in the template. and bind to its `dataEvent` property.
-  #4 in parent component, define the `handleDataEvent()` method to receive the data emitted from the child component. 
+  #4 in parent component, define the `handleDataEvent()` method to receive the data emitted from the child component.
  -->
 <!-- 30 Child to Parent -->
 <p class="display-4 text-warning">{{showData}}</p>

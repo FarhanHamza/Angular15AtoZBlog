@@ -1,0 +1,63 @@
+-------------------------------------------------
+<h2>Products</h2>
+-------------------------------------------------
+<div class="container">
+    <p class="lead">Please fill the forms:</p>
+    {{isFormSubmit}}
+    <!-- form Start -->
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" formControlName="productName" id="productName"
+                        placeholder="Enter product name">
+                    <!-- <label for="productName">Enter Product name <span *ngIf="f['productName']?.errors['required']" class="text-danger">*</span></label> -->
+                    <!-- <label for="productName">Enter Product name <span *ngIf="f['productName'].errors?.['required']" class="text-danger">*</span></label> -->
+                    <label for="productName" class="requiredField">Enter Product name</label>
+                    <!-- <span *ngIf="f['productName'].errors['required']">This field is required</span> -->
+                    <!-- <span *ngIf="isRequired">This field is required</span> -->
+                    <app-error [form_control]="f['productName']" [isSubmitted]="isFormSubmit"></app-error>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" formControlName="price" id="price"
+                        placeholder="Enter price">
+                    <label for="price" class="requiredField">Enter price</label>
+                    <app-error [form_control]="f['price']" [isSubmitted]="isFormSubmit"></app-error>
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- <div class="form-floating">
+                    <select class="form-select" formControlName="isActive" id="isActive" aria-label="Floating label select example">
+                        <option selected value="1">true</option>
+                        <option value="true">true</option>
+                        <option value="false">false</option>
+                    </select>
+                    <label for="isActive">Is Active</label>
+                </div> -->
+                <div class="form-check">
+                    <input type="checkbox" formControlName="isActive" class="form-check-input" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">Status</label>
+                </div>
+            </div>
+            <div class="form-group col-3">
+                <label for=""> &nbsp;</label>
+                <button *ngIf="showAddBtn" type="button" class="btn btn-sm btn-primary mt-2"
+                    (click)="submitProductForm()">
+                    <i class="bi bi-plus-circle"></i> Add Product</button>
+
+                <button *ngIf="showUpdateBtn" type="button" class="btn btn-sm btn-warning mt-2"
+                    (click)="updateProduct()">
+                    <i class="bi bi-edit-circle"></i> Update</button>
+            </div>
+        </div>
+    </form>
+
+
+    <app-product-list [product_List]="productList" (delProduct)="deleteCurrentProduct($event)"
+        (editProduct)="editProduct($event)"></app-product-list>
+</div>
+
+<span><i class="bi bi-broadcast"></i></span>
+<button> 2<i class="bi bi-exclamation-circle"></i> </button>

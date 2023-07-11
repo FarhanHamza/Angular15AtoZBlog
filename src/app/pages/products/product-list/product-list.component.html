@@ -1,0 +1,31 @@
+<!-- <p>product-list works!</p> -->
+
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>product Id</th>
+            <th scope="col">Product Name</th>
+            <th>Price</th>
+            <th>Is Active</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <div *ngIf=" product_List && product_List.length == 0; else showTableData">
+            <p class="lead">no data</p> 
+        </div>
+        <ng-template #showTableData>
+            <tr *ngFor="let product of product_List; index as i">
+                <th scope="row">{{i+1}}</th>
+                <th>{{product.id}}</th>
+                <td>{{product.productName}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.isActive | isActivePipe}}</td>
+                <td><button class="btn btn-sm btn-primary" (click)="editProductClick(product)">Edit</button>
+                    |&nbsp; <button class="btn btn-sm btn-danger"(click)="deleteProductClick(product)">Delete</button>
+                </td>
+            </tr>
+        </ng-template>
+    </tbody>
+</table>

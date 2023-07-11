@@ -1,33 +1,85 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@300;400&display=swap");
+body {
+  font-family: "Karma", serif !important;
+}
 /* You can add global styles to this file, and also import other style files */
-.heading{
-    color: green;
-    padding: 20px;
-    border: 2px solid gray;
+.heading {
+  color: green;
+  padding: 20px;
+  border: 2px solid gray;
 }
-.headingTen{
-    color: yellowgreen;
-    padding: 20px;
-    border: 2px solid gray;
-}
-
-.twentyH{
-    color: red;
-    padding: 20px;
-    border: 2px solid gray;
+.headingTen {
+  color: yellowgreen;
+  padding: 20px;
+  border: 2px solid gray;
 }
 
-.thirty{
-    color: rgb(205, 136, 7);
-    padding: 20px;
-    border: 2px solid gray;
-}
-.thirty kbd{
-        background-color: burlywood;
+.twentyH {
+  color: red;
+  padding: 20px;
+  border: 2px solid gray;
 }
 
-
-body{
-    margin: 0;
+.thirty {
+  color: rgb(205, 136, 7);
+  padding: 20px;
+  border: 2px solid gray;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.thirty kbd {
+  background-color: burlywood;
+}
+
+body {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.table-sm {
+  font-size: 12px !important;
+}
+
+/* Validation for Reactive Forms */
+
+/* Add content in Label */
+.requiredField::after{
+  content: "*";
+  margin: 0 6px;
+  color: red;
+}

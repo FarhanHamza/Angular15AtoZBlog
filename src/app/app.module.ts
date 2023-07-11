@@ -37,6 +37,10 @@ import { ChildtoparentAIComponent } from './lectures/childtoparent-ai/childtopar
 import { Twowaybind31Component } from './lectures/twowaybind31/twowaybind31.component';
 import {FormsModule} from "@angular/forms";
 import { Temprefvar32Component } from './lectures/temprefvar32/temprefvar32.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { ProductsModule } from './pages/products/products.module';
+import { IsActivePipe } from './shared/pipes/is-active.pipe';
+import { ErrorComponent } from './shared/components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +67,8 @@ import { Temprefvar32Component } from './lectures/temprefvar32/temprefvar32.comp
     ChildtoparentAIComponent,
     Twowaybind31Component,
     Temprefvar32Component,
-
+    BreadcrumbComponent,
+    // ErrorComponent,
 
   ],
   imports: [
@@ -87,7 +92,10 @@ import { Temprefvar32Component } from './lectures/temprefvar32/temprefvar32.comp
     RouterModule,
     SkillsModule,
     AppRoutingModule,
-  ],
+    
+    // Product Modules
+    ProductsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
