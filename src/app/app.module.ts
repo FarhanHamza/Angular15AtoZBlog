@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/shared/shared.module';
 import { ResuableCompDetail29Component } from './lectures/ReuableComponent29/ResuableCompDetail29.component';
 import { ElseifComponent } from './lectures/elseif/elseif.component';
 import { NgModule } from '@angular/core';
@@ -69,16 +70,19 @@ import { Basictypescript33Component } from './lectures/basictypescript33/basicty
     Twowaybind31Component,
     Temprefvar32Component,
     BreadcrumbComponent,
-    // ErrorComponent,    Basictypescript33Component,
+    // ErrorComponent,   // removed from Here
+     Basictypescript33Component,
 
 
   ],
   imports: [
-    FormsModule,
+
+    SharedModule,
+    // FormsModule, // Removed from Here
     BrowserModule,
     // BuildingRoutingModule,
     BrowserAnimationsModule,
-    CommonModule,
+    // CommonModule, // Removed from Here
     //#region MAT 
     // ng-bootstrap
     NgbModule,
