@@ -1,6 +1,7 @@
 <!-- <p>product-list works!</p> -->
 
 <table class="table table-bordered table-striped table-hover">
+        <input type="text" for="productName" (input)="search(searchProduct)" [(ngModel)]="searchProduct">
     <thead>
         <tr>
             <th>#</th>

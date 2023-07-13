@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -14,7 +14,10 @@ import Swal from 'sweetalert2';
   styleUrls: ['./add-product.component.css'],
 })
 export class AddProductsComponent implements OnInit {
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private changeDetectorRef: ChangeDetectorRef
+  ) {}
   ngOnInit(): void {
     this.create();
     // Swal.fire({
@@ -89,11 +92,13 @@ export class AddProductsComponent implements OnInit {
     Swal.fire(`Product`, `${JSON.stringify(this.form.value)}`, 'question');
 
     this.productList.push({
-      id: this.productList.length +1,
+      id: this.productList.length + 1,
       productName: this.form.value['productName'],
       price: this.form.value['price'],
       isActive: this.form.value['isActive'],
     });
+    this.changeDetectorRef.detectChanges();
+    // this.productList = [...this.productList]; // Update the productList property
 
     this.create();
     this.isFormSubmit = false;
@@ -123,10 +128,12 @@ export class AddProductsComponent implements OnInit {
   }
 
   updateProduct() {
-    let index = this.productList.findIndex((p: Product) => p.id === this.currentId);
+    let index = this.productList.findIndex(
+      (p: Product) => p.id === this.currentId
+    );
     if (index === -1) {
-      console.log("Product not found"); 
-     return;
+      console.log('Product not found');
+      return;
     }
 
     // updating values on index:
@@ -137,6 +144,6 @@ export class AddProductsComponent implements OnInit {
     this.showAddBtn = true;
     this.showUpdateBtn = false;
     this.create();
-    Swal.fire("Product", `Product Updated!`, "success")
+    Swal.fire('Product', `Product Updated!`, 'success');
   }
 }

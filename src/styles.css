@@ -78,8 +78,17 @@ html {
 /* Validation for Reactive Forms */
 
 /* Add content in Label */
-.requiredField::after{
+.requiredField::after {
   content: "*";
   margin: 0 6px;
   color: red;
+}
+
+/* Input fileds Border Success|Error */
+.form-control.ng-invalid {
+  border: 1px solid red;
+}
+
+.form-control.ng-valid {
+  border: 1px solid green;
 }
